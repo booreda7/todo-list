@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "New Tegomin", serif;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, yellow, orange);
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  border: none;
+  background: white;
+}
+form button {
+  color: rgb(255, 115, 0);
+  background: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+form button:hover {
+  background: rgb(255, 115, 0);
+  color: white;
+}
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+.todolist {
+  margin-top: 40px;
+}
+.todoitem {
+  list-style: none;
+  background-color: white;
+  min-width: 20%;
+}
+.todoitem,
+.deletebtn,
+.successbtn {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  min-height: 40px;
+}
+.deletebtn,
+.successbtn {
+  cursor: pointer;
+  color: white;
+  background-color: tomato;
+  border: none;
+  min-width: 2%;
+  transition: all 0.3s ease;
+}
+.successbtn {
+  background-color: teal;
+}
+.successbtn:hover {
+  background-color: rgb(8, 206, 206);
+}
+.deletebtn:hover {
+  background-color: rgb(255, 38, 0);
+}
+.todoitem {
+  padding-left: 0.5rem;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
